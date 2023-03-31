@@ -17,7 +17,7 @@ def parentheses(string):
   if stack:
     return 'no'
   return 'yes'
-
+ 
 
 while True:
   string = input()
