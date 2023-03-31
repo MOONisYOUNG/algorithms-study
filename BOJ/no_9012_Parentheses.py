@@ -1,7 +1,7 @@
 import sys
 N = int(input())
 
-def parenthesis(string):
+def parentheses(string):
   stack = []
   for s in string:
     if s == '(':
