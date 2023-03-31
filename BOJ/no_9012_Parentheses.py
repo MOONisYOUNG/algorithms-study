@@ -17,4 +17,4 @@ def parentheses(string):
   
 for _ in range(N):
   string = sys.stdin.readline()
-  print(parenthesis(string[:-1]))
+  print(parentheses(string[:-1]))
