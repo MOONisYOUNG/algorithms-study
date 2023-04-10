@@ -9,7 +9,7 @@ while True:
     num_string = input().rstrip()
     
     if num_string == '0':
-        break
+        break 
     
     if is_palindrome(num_string):
         print("yes")
