@@ -12,6 +12,6 @@ for _ in range(N):
 word_li = sorted(list(word_set))
 word_li.sort(key=lambda data : len(data))
 
-
+ 
 for idx in range(len(word_li)):
     print(word_li[idx])
