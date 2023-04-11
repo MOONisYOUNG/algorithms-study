@@ -3,7 +3,7 @@
 ### 👉 BOJ, Programmers, etc 문제 풀이 
 
 ### #BOJ 폴더 :
-* 백준(https://www.acmicpc.net)과 Solved(https://solved.ac/) 사이트를 이용했음.
+* 백준(https://www.acmicpc.net/)과 Solved(https://solved.ac/) 사이트를 이용했음.
 * 백준의 '단계별로 풀어보기'컨텐츠는 개별 알고리즘 단위로 공부할 때 병행하는 용도로 적합함. 탄탄한 개념서를 보면서 풀면 효과가 배로 늘어남.
 * Solved의 'Class 선별' 컨텐츠는 학습 수준에 따라 분류한 다양한 알고리즘 문제들을 골고루 풀어보는 용도로 적합함.
 * 공부할 때는 탄탄한 개념서와 함께 좋은 예제를 여러 번 보는 것이 필요하다고 생각하는 편임. 
