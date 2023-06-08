@@ -1,0 +1,14 @@
+# 1. WHERE절 서브 쿼리를 통해서 MAX(FAVORITES)에 해당하는 row들을 뽑는다. 
+# 2. 서브쿼리를 통해 뽑은 row들은, WHERE절의 IN 연산자를 사용해서 원본 데이터 속에서 일치하는 행들을 뽑는다.
+# 3. 음식 종류를 내림차순 정렬해야 하므로 OREDER BY FOOD_TYPE DESC를 사용한다.
+# 4. SELECT 절에서 FOOD_TYPE, REST_ID, REST_NAME, FAVORITES를 뽑는다.
+
+
+SELECT FOOD_TYPE, REST_ID, REST_NAME, FAVORITES
+FROM REST_INFO 
+WHERE (FOOD_TYPE, FAVORITES) IN (
+    SELECT FOOD_TYPE, MAX(FAVORITES) 
+    FROM REST_INFO 
+    GROUP BY FOOD_TYPE
+)
+ORDER BY FOOD_TYPE DESC;
