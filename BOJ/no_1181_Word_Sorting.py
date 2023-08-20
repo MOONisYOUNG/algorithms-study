@@ -1,15 +1,17 @@
 import sys
+
 input = sys.stdin.readline
 
-word = input().rstrip()
+N = int(input())
 
-total_new_words = []
+word_set = set()
 
-for i in range(1, len(word)-2):
-    split_word_1st = word[:i][::-1]
+for _ in range(N):
+    word_set.add(input().rstrip())
     
-    for j in range(i+1, len(word)):
-        new_word = word[:i][::-1] + word[i:j][::-1] + word[j:][::-1]
-        total_new_words.append(new_word)
-    
-print(min(total_new_words))
+word_li = sorted(list(word_set))
+word_li.sort(key=lambda data : len(data))
+
+
+for idx in range(len(word_li)):
+    print(word_li[idx])
