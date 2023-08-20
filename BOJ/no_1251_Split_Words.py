@@ -12,4 +12,6 @@ for i in range(1, len(word)-2):
         new_word = word[:i][::-1] + word[i:j][::-1] + word[j:][::-1]
         total_new_words.append(new_word)
     
-print(min(total_new_words))
+total_new_words.sort()
+
+print(total_new_words[0])
