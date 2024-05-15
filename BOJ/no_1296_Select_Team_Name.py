@@ -1,20 +1,17 @@
 import sys
-from collections import Counter
 input = sys.stdin.readline
 
-yeondoo_name = input()[:-1]
-yeondoo_counter = Counter(yeondoo_name)
+yeondoo = input()[:-1]
 n = int(input())
 team_names = [input()[:-1] for _ in range(n)]
 
+# collections.Counter 사용하는 것보다 빌트인 count 함수 쓰는 것이 더 효율적
 winning_rates = []
 for team in team_names:
-    team_counter = Counter(team)
-    
-    l = yeondoo_counter['L'] + team_counter['L']
-    o = yeondoo_counter['O'] + team_counter['O']
-    v = yeondoo_counter['V'] + team_counter['V']
-    e = yeondoo_counter['E'] + team_counter['E']
+    l = yeondoo.count('L') + team.count('L')
+    o = yeondoo.count('O') + team.count('O')
+    v = yeondoo.count('V') + team.count('V')
+    e = yeondoo.count('E') + team.count('E')
     
     val = ((l+o) * (l+v) * (l+e) * (o+v) * (o+e) * (v+e)) % 100
     winning_rates.append([val, team])
