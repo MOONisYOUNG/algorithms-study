@@ -1,17 +1,18 @@
 import sys
 
-N = int(sys.stdin.readline())
-P_list = list(map(int, sys.stdin.readline().split()))
+n = int(sys.stdin.readline())
+p_list = list(map(int, sys.stdin.readline().split()))
 
-P_list.sort()
+# 인출 시간을 오름차순으로 정렬
+p_list.sort()
 
-def ATM(P_list):
+def atm(p_list):
     prefix_sum = []
     temp = 0
-    for i in P_list:
+    for i in p_list:
         temp += i
         prefix_sum.append(temp)
     return sum(prefix_sum)
 
 
-print(ATM(P_list))
+print(atm(p_list))
