@@ -10,7 +10,6 @@ for _ in range(n):
     
 # 회의 끝나는 시간, 회의 시작 시간 순으로 오름차순 정렬
 schedule_li.sort(key = lambda data:(data[1], data[0]))
-print(schedule_li)
 
 def available_seminar_schedule(n, schedule_li):
     cnt = 1
