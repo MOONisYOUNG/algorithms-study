@@ -32,4 +32,4 @@ def solution(input_str: str) -> int:
     return answer
 
 # input example : '3+2*5-10' (-> output: 15)
-print(solution(input()))
+print(solution(input())) 

@@ -27,4 +27,4 @@ def z_find(x, y, size):
         
 
 z_find(r, c, 2**n)
-print(int(answer))
+print(int(answer)) 
