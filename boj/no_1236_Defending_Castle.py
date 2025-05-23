@@ -14,11 +14,11 @@ def solution(n: int, m: int) -> int:
             if row[j] == 'X':
                 row_tf_li[i] = True
                 col_tf_li[j] = True
-    
+
+    row_f_cnt = row_tf_li.count(False)    
     col_f_cnt = col_tf_li.count(False)
-    row_f_cnt = row_tf_li.count(False)
     
-    answer = max(col_f_cnt, row_f_cnt)
+    answer = max(row_f_cnt, col_f_cnt)
     
     return answer
     
