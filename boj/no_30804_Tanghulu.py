@@ -13,7 +13,8 @@ def solution(n: int, fruits_li: List[int]) -> int:
     counts_dict = defaultdict(int)
     
     for right in range(n):
-        counts_dict[fruits_li[right]] += 1
+        right_num = fruits_li[right]
+        counts_dict[right_num] += 1
         
         while len(counts_dict) > 2:
             left_num = fruits_li[left]
