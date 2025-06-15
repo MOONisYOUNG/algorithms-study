@@ -11,7 +11,6 @@ def solution(n: int, graph: List[str]) -> List[int]:
     dy = [0, 0, -1, 1]
     
     def dfs(x: int, y: int, current_color: str, visited_arr: List[bool], is_color_weakness: bool):
-        
         visited_arr[x][y] = True
         
         for i in range(4):
