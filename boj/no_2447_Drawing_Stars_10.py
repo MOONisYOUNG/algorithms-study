@@ -1,6 +1,6 @@
 from typing import List
 
-def solution(n: int) -> List[int]:
+def solution(n: int) -> List[str]:
     if n == 1:
         return ['*']
         
