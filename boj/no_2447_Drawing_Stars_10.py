@@ -4,19 +4,19 @@ def solution(n: int) -> List[str]:
     if n == 1:
         return ['*']
         
-    stars = solution(n // 3)
-    star_li = []
+    patterns = solution(n // 3)
+    pattern_li = []
 
-    for star in stars: 
-        star_li.append(star * 3)
+    for pattern in patterns: 
+        pattern_li.append(pattern * 3)
         
-    for star in stars:
-        star_li.append(star + (' '  * (n//3)) + star)
+    for pattern in patterns:
+        pattern_li.append(pattern + (' '  * (n//3)) + pattern)
         
-    for star in stars:
-        star_li.append(star * 3)
+    for pattern in patterns:
+        pattern_li.append(pattern * 3)
         
-    return star_li
+    return pattern_li
 
 if __name__ == "__main__":
     n = int(input())
