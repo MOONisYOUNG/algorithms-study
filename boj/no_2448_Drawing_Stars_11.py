@@ -12,11 +12,11 @@ def solution(n: int) -> List[str]:
             for i in range(-2, 3):
                 canvas[row + 2][col + i] = '*'
             return
-
         new_size = size // 2
         draw_pattern(row, col, new_size)
         draw_pattern(row + new_size, col - new_size, new_size)
         draw_pattern(row + new_size, col + new_size, new_size)
+
 
     draw_pattern(0, n - 1, n)
 
